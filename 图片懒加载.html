@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.img{
+				width: 260px;
+				height: 260px;
+				display: block;
+				margin: 40px auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="">
+			<img class="img" src="../img/1_03.png"/>
+			<img class="img"  src="../img/1_03.png"/>
+			<img class="img" src="../img/1_03.png"/>
+			<img class="img"  />
+			<img class="img"  />
+			<img class="img"  />
+			<img class="img" />
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+	
+	
+	var img=document.querySelectorAll("img")
+	
+//	let scrollTop = Math.max(document.documentElement.scrollTop, document.body.scrollTop);
+		
+	window.onscroll=function(){
+		
+		let scrollTop = document.documentElement.scrollTop
+//		let all=document.documentElement.clientHeight || window.innerHeight
+//		let see=img[0].getBoundingClientRect().top
+//		console.log(all,see)
+		if(scrollTop>=300){
+			
+			img[3].src="../img/1_03.png"
+		}
+		if(scrollTop>=600){
+			img[4].src="../img/1_03.png"
+		}
+		if(scrollTop>=800){
+			img[5].src="../img/1_03.png"
+		}
+		if(scrollTop>=1140){
+			img[6].src="../img/1_03.png"
+		}
+	}
+</script>
